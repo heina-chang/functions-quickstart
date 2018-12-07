@@ -1,10 +1,10 @@
 module.exports = function (context, req) {
-    context.log('JavaScript HTTP trigger function processed a request.');
+    context.log('heina cli JavaScript HTTP trigger function processed a request.');
 
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
+            body: "Hello my name is " + (req.query.name || req.body.name)
         };
     }
     else {
